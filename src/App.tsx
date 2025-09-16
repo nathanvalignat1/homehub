@@ -18,6 +18,7 @@ import TasksPage from "./pages/TasksPage";
 import RecipesPage from "./pages/RecipesPage";
 import NotesPage from "./pages/NotesPage";
 import SettingsPage from "./pages/SettingsPage";
+import ExpensesDemoPage from './pages/ExpensesDemoPage'
 
 function SidebarLink({
   to,
@@ -124,6 +125,7 @@ function AppShell() {
               <SidebarLink to="/recipes" icon={BookOpenText} label="Recettes" />
               <SidebarLink to="/notes" icon={NotebookPen} label="Notes" />
               <SidebarLink to="/settings" icon={Settings} label="Paramètres" />
+              <SidebarLink to="/expenses-demo" icon={Receipt} label="Dépenses (démo)" />
             </nav>
           </aside>
         )}
@@ -181,11 +183,14 @@ export default function App() {
       <Route element={<AppShell />}>
         <Route index element={<HomePage />} />
         <Route path="expenses" element={<ExpensesPage />} />
+        <Route path="expenses-demo" element={<ExpensesDemoPage />} /> {/* démo */}
         <Route path="tasks" element={<TasksPage />} />
         <Route path="recipes" element={<RecipesPage />} />
         <Route path="notes" element={<NotesPage />} />
         <Route path="settings" element={<SettingsPage />} />
       </Route>
     </Routes>
-  );
+  )
 }
+
+

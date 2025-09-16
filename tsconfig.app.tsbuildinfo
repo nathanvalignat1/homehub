@@ -1,0 +1,21 @@
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/main.tsx",
+    "./src/vite-env.d.ts",
+    "./src/components/finance/expenseform.tsx",
+    "./src/components/finance/expenselist.tsx",
+    "./src/components/finance/grouppage.tsx",
+    "./src/db/finance.ts",
+    "./src/db/index.ts",
+    "./src/hooks/usefinance.ts",
+    "./src/pages/expensespage.tsx",
+    "./src/pages/homepage.tsx",
+    "./src/pages/notespage.tsx",
+    "./src/pages/recipespage.tsx",
+    "./src/pages/settingspage.tsx",
+    "./src/pages/taskspage.tsx",
+    "./src/tests/finance.spec.ts"
+  ],
+  "version": "5.8.3"
+}
